@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1Green AI Chatbot</title>
+    <title>2Green AI Chatbot</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
         .chat-container { width: 450px; height: 600px; background: white; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column; overflow: hidden; }
@@ -43,8 +43,7 @@
     // 1. PUT YOUR API KEY HERE
     const API_KEY = "AIzaSyB1MeT1WfXzp5zOZZVYKc-oV2vdMxqaRus"; 
     const genAI = new GoogleGenerativeAI(API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-
+const model = genAI.getGenerativeModel({ model: "gemini-3-flash" });
     // Start a chat session
     const chat = model.startChat({ history: [] });
 
