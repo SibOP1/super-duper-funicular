@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fetch API Test</title>
+</head>
+<body>
+
+<h2>Fetch API Test</h2>
+<button onclick="getData()">Get Data</button>
+
+<pre id="output"></pre>
+
+<script>
+  function getData() {
+    fetch("https://www.google.com")
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("output").textContent = JSON.stringify(data, null, 2);
+      })
+      .catch(error => console.error("Error:", error));
+  }
+</script>
+
+</body>
+</html>
